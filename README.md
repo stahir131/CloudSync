@@ -5,6 +5,14 @@
 
 **Source2: Settings on Microsoft Entra ID portal** - [here](https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/how-to-configure)
 
+Before proceeding with installation. To ensure that your users are sync with the correct domain to M365 portal.
+If your exsting AD domain name is different from your Microsoft 365 domain, you may need to perform the following steps to add the M365 UPN as a trust domain.
+Step: Login to DC > Server Manager > Tools > AD Domains and trusts
+Right-click on the AD Domains and Trusts on the left pane > Select Properties > Add the exact M365 domain here and OK
+
+![image](https://github.com/user-attachments/assets/89a3d328-1c14-49f8-b775-609bdba3bcff)
+
+   
 **Step 1**: Download and install "Provisioning Agent" [here](https://entra.microsoft.com/#view/Microsoft_AAD_Connect_Provisioning/AADConnectMenuBlade/~/GetStarted?Microsoft_AAD_IAM_legacyAADRedirect=true)
 
 **Step 2**: Configure the Provisioning agent on AD.
